@@ -22,8 +22,6 @@ class Api:
     def set_method(self, method: str):
         """
         allow_method_list: ['GET', 'POST', 'PUT', 'DELETE']
-        :param method:
-        :return:
         """
         self.method = method.upper()
 

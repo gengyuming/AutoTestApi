@@ -55,6 +55,7 @@ class Requests:
                                 headers=self.headers,
                                 params=body)
 
+
         return response
 
     def __post_request__(self):
@@ -105,6 +106,7 @@ if __name__ == '__main__':
                          body=body)
 
     response = request.send_request()
+    print(response.elapsed.total_seconds())
 
 
 
