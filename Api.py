@@ -48,6 +48,16 @@ class Api:
         return body
 
     def add_body_param(self, param: dict):
+        """
+        :param param:
+        {"param_name": {"default": "", "type": "", "range": ""}}
+        default: 默认值
+        type: 数据类型 --> int/float/str/list/dict
+        range: 范围
+        [enum1, enum2]: 枚举值
+        (start, end): 数值范围/字符长度范围
+        :return:
+        """
         self.body.update(param)
 
         return self.body
