@@ -55,7 +55,7 @@ class Api:
         type: 数据类型 --> int/float/str/list/dict
         range: 范围
         [enum1, enum2]: 枚举值
-        (start, end): 数值范围/字符长度范围
+        (start, end): int --> 数值范围 / str --> 字符长度范围
         :return:
         """
         self.body.update(param)
@@ -64,4 +64,6 @@ class Api:
 
     def del_body_param(self, param: str):
         self.body.pop(param)
+
+
 
